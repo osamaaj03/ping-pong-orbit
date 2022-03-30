@@ -29,11 +29,11 @@ public class Ball : MonoBehaviour
     }
 
     void OnTriggerEnter2D (Collider2D other)   {
-        if(other.gameObject.name == "paddle V" && (int) FindObjectOfType<PaddleControl>().currentColor == (int) randomColor) {
+        if(other.gameObject.name == "Paddle V" && (int) FindObjectOfType<PaddleControl>().currentColor == (int) randomColor) {
             speed.x = -speed.x;
             PlayHit();
         }
-        if(other.gameObject.name == "paddle H" && (int) FindObjectOfType<PaddleControl>().currentColor == (int) randomColor) {
+        if(other.gameObject.name == "Paddle H" && (int) FindObjectOfType<PaddleControl>().currentColor == (int) randomColor) {
             speed.y = -speed.y;
             PlayHit();
         }

@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 652850973}
   - component: {fileID: 652850972}
   m_Layer: 6
-  m_Name: floor
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 727464953}
   - component: {fileID: 727464955}
   m_Layer: 0
-  m_Name: ball
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 756124549}
   - component: {fileID: 756124548}
   m_Layer: 7
-  m_Name: wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 1326890801}
   - component: {fileID: 1326890800}
   m_Layer: 0
-  m_Name: paddle V
+  m_Name: Paddle V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1631269447}
   - component: {fileID: 1631269446}
   m_Layer: 0
-  m_Name: paddle H
+  m_Name: Paddle H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899835998}
   m_Layer: 0
-  m_Name: admin
+  m_Name: Admin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 2062615030}
   - component: {fileID: 2062615029}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2062615028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71bee60e278c52f42a534c52ca353d7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a6787719af104aa1b17930ed8daf9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
