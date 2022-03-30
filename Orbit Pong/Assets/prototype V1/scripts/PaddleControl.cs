@@ -1,17 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class paddleControll : MonoBehaviour
+public class PaddleControl : MonoBehaviour
 {
-    [HideInInspector]
-    public enum colors {
-        red,
-        green,
-        blue
-    }
     
     [HideInInspector]
-    public colors currentColor;
+    public Colors currentColor;
     public Camera camera2D;
     public LayerMask layerMaskFoor;
     public LayerMask layerMaskwall;
@@ -51,32 +45,32 @@ public class paddleControll : MonoBehaviour
         }
         //color switching
         if(Input.GetKeyDown(KeyCode.R)) {
-            changeColor();
-            currentColor = colors.red;
+            ChangeColor();
+            currentColor = Colors.red;
         }
         if(Input.GetKeyDown(KeyCode.G)) {
-            changeColor();
-            currentColor = colors.green;
+            ChangeColor();
+            currentColor = Colors.green;
         }
         if(Input.GetKeyDown(KeyCode.B)) {
-            changeColor();
-            currentColor = colors.blue;
+            ChangeColor();
+            currentColor = Colors.blue;
         }       
     }
-    void changeColor() {
+    void ChangeColor() {
         switch (currentColor)
         {
-            case colors.red: {
+            case Colors.red: {
                 paddleH.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
                 paddleV.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
                 break;
             }
-            case colors.green: {
+            case Colors.green: {
                 paddleH.GetComponent<SpriteRenderer>().color = new Color(0, 1, 0, 1);
                 paddleV.GetComponent<SpriteRenderer>().color = new Color(0, 1, 0, 1);
                 break;
             }
-            case colors.blue: {
+            case Colors.blue: {
                 paddleH.GetComponent<SpriteRenderer>().color = new Color(0, 0, 1, 1);
                 paddleV.GetComponent<SpriteRenderer>().color = new Color(0, 0, 1, 1);
                 break;
