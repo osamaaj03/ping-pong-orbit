@@ -1154,11 +1154,13 @@ GameObject:
   - component: {fileID: 727464950}
   - component: {fileID: 727464952}
   - component: {fileID: 727464954}
-  - component: {fileID: 727464953}
+  - component: {fileID: 727464957}
   - component: {fileID: 727464955}
+  - component: {fileID: 727464956}
+  - component: {fileID: 727464953}
   m_Layer: 0
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1389,6 +1391,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &727464956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727464949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb1d71aeba97f7740935f82c3dae957c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 1, y: 1}
+  speedMultplier: 120
+  hitSound: {fileID: 8300000, guid: 44a183cbc949d6049bdcbb7a0f31395b, type: 3}
+--- !u!114 &727464957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727464949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2428ff3c5259e7744b7a9749717546f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 1, y: 1}
+  speedMultplier: 120
+  hitSound: {fileID: 8300000, guid: 99f4376fdbb4d2746aa149364977418a, type: 3}
 --- !u!1 &729938415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,7 +2982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3668a318f3dc0469eae8063c7773c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
 --- !u!1 &1925405330
 GameObject:
   m_ObjectHideFlags: 0
