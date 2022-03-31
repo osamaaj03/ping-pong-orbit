@@ -3,24 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ball
+  - Hit
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ball
   - Water
   - UI
-  - Floor
-  - Wall
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - slider1
+  - slider2
+  - slider3
+  - slider4
+  - slider5
+  - slider6
+  - slider7
+  - slider8
+  - paddle
+  - shield
   - 
   - 
   - 
