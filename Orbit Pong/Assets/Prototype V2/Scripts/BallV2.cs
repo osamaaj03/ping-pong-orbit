@@ -1,21 +1,21 @@
 using UnityEngine;
 using System;
 using Random = UnityEngine.Random;
-public class ball : MonoBehaviour
+public class BallV2 : MonoBehaviour
 {
     public Vector2 speed;
     public float speedMultplier = 1;
     public AudioClip hitSound;
 
     private AudioSource audioSource;
-    private admin center;
+    private AdminV2 center;
     private colors randomColor;
     private Rigidbody2D rb;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
-        center = FindObjectOfType<admin>();
+        center = FindObjectOfType<AdminV2>();
     }
 
     void FixedUpdate () {

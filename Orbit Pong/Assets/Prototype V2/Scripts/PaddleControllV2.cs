@@ -6,7 +6,7 @@ using UnityEngine;
         blue
     }
 
-public class paddleControll : MonoBehaviour
+public class PaddleControllV2 : MonoBehaviour
 {
     
     [HideInInspector]
@@ -16,7 +16,7 @@ public class paddleControll : MonoBehaviour
     public GameObject[] paddle;
     public float speedLimit;
 
-    async void Update()
+    void Update()
     {
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = 5;
