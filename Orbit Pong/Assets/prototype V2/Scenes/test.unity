@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 1, y: 1}
-  speedMultplier: 20
+  speedMultplier: 120
   hitSound: {fileID: 8300000, guid: 99f4376fdbb4d2746aa149364977418a, type: 3}
 --- !u!1 &729938415
 GameObject:
@@ -2947,9 +2947,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899835997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3668a318f3dc0469eae8063c7773c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 265c44a44b7f63d4b84ba491310d5ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 8
 --- !u!1 &1925405330
 GameObject:
   m_ObjectHideFlags: 0
