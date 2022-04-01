@@ -15,12 +15,10 @@ public class Ball : MonoBehaviour
     public AudioClip hitSound;
 
     private AudioSource audioSource;
-    private Admin center;
     private Colors randomColor;
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
-        center = FindObjectOfType<Admin>();
     }
 
     void Update () {

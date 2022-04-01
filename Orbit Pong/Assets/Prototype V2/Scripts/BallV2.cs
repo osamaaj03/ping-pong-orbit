@@ -3,39 +3,18 @@ using System;
 using Random = UnityEngine.Random;
 public class BallV2 : MonoBehaviour
 {
-    public Vector2 speed;
-    public float speedMultplier = 1;
-    public AudioClip hitSound;
-
-    private AudioSource audioSource;
-    private AdminV2 center;
     private colors randomColor;
     private Rigidbody2D rb;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        audioSource = GetComponent<AudioSource>();
-        center = FindObjectOfType<AdminV2>();
-    }
-
-    void FixedUpdate () {
-        rb.velocity = speed * Time.deltaTime * speedMultplier;
+        rb.AddForce(Vector2.right * 200);
     }
 
     void OnCollisionEnter2D (Collision2D collision)   {
-        if(collision.gameObject.CompareTag("Hit")   /* && (int) FindObjectOfType<paddleControll>().currentColor == (int) randomColor*/) {
-            speed = collision.transform.up;
-            PlayHit();
-            if (collision.gameObject.layer == LayerMask.NameToLayer("shield")) {
+        /*if (collision.gameObject.layer == LayerMask.NameToLayer("shield")) {
                 Destroy(collision.gameObject, 1);
-                center.health--;
-            }
-        }
-    }
-
-    void PlayHit() {
-        audioSource.pitch = Random.Range(0.5f, 1.0f);
-        audioSource.PlayOneShot(hitSound);
+        }*/
     }
     
     /*void changeColor() {
