@@ -13,16 +13,12 @@ public class PaddleBarrier : MonoBehaviour
     }
 
     private void Update() {
-        ControlPaddleRotation();
-    }
-
-    private void ControlPaddleRotation(){
         float rotateAmount = Input.GetAxis("Horizontal");
         rotateAmount *= turnSpeed * Time.deltaTime;
 
         if (invertRotation) rotateAmount = -rotateAmount;
 
         // a positive rotateAmount is counter-clockwise. negative is clockwise
-        transform.Rotate(Vector3.forward, rotateAmount);
+        paddleParent.transform.Rotate(Vector3.forward, rotateAmount);
     }
 }
