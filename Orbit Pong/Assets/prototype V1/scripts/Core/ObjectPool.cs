@@ -45,7 +45,6 @@ namespace Pong.Core
             
             foreach (Enemy enemy in objectPool)
             {
-                print(enemy.enabled);
                 if (!enemy.isActiveAndEnabled) { 
                     enemy.gameObject.SetActive(true);
                     return;
