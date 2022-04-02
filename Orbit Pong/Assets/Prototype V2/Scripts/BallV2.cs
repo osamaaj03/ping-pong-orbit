@@ -8,7 +8,11 @@ public class BallV2 : MonoBehaviour
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.right * 200);
+        rb.AddForce(Vector2.down * 200);
+    }
+
+    void Update() {
+        Debug.DrawRay(transform.position, rb.velocity);
     }
 
     void OnCollisionEnter2D (Collision2D collision)   {

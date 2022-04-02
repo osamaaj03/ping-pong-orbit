@@ -1929,9 +1929,9 @@ GameObject:
   - component: {fileID: 727464951}
   - component: {fileID: 727464950}
   - component: {fileID: 727464953}
-  - component: {fileID: 727464952}
   - component: {fileID: 727464954}
   - component: {fileID: 727464955}
+  - component: {fileID: 727464952}
   m_Layer: 0
   m_Name: ball
   m_TagString: Ball
@@ -1979,7 +1979,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8d74955c77c799a44bae7a18f5734253, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c4724a29e20a59345bc4723c963fbc80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2004,8 +2004,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &727464952
-PolygonCollider2D:
+--- !u!58 &727464952
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2013,26 +2013,13 @@ PolygonCollider2D:
   m_GameObject: {fileID: 727464949}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 850778609b5656749841cca63116f142, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.375}
-    newSize: {x: 0.375, y: 0.375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.1875, y: 0.1875}
-      - {x: -0.1875, y: -0.1875}
-      - {x: 0.1875, y: -0.1875}
-      - {x: 0.1875, y: 0.1875}
+  serializedVersion: 2
+  m_Radius: 0.255
 --- !u!114 &727464953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4736,7 +4723,7 @@ MonoBehaviour:
   - {fileID: 54882388}
   - {fileID: 106780505}
   - {fileID: 1135941791}
-  speedLimit: 2
+  speedLimit: 5
 --- !u!4 &2062615030
 Transform:
   m_ObjectHideFlags: 0

@@ -23,11 +23,10 @@ public class Paddle : MonoBehaviour
             Vector3 hitPoint = collision.contacts[0].point;
             
             Vector3 difference = transform.position - hitPoint;
-            float angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             float width = collision.otherCollider.bounds.size.x / 2;
 
             float currentAngle = Vector2.SignedAngle(transform.up, ballRb.velocity);
-            float bounceAngle = (angle / width) * 75;
+            float bounceAngle = Vector2.SignedAngle((difference / width), transform.up);
             float newAngle = Mathf.Clamp(currentAngle + bounceAngle, -75, 75);
 
             Quaternion rotation = Quaternion.AngleAxis(newAngle, transform.forward);
