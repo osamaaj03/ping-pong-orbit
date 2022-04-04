@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934247456879237239}
   - component: {fileID: 7685784533396857467}
+  - component: {fileID: 6712627460081634120}
   - component: {fileID: 5900942786626317464}
   - component: {fileID: 141866798086501276}
   - component: {fileID: 7248085108532087084}
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,6 +86,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6712627460081634120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075680858083928659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d29569aefe6cc4cb546c9a5dfe61d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  Range: 2
 --- !u!114 &5900942786626317464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,8 +126,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
