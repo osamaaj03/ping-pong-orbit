@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rune : ScriptableObject
-{
-    public GameObject spawnable;
+namespace Pong.Runes {
+    public class Rune : ScriptableObject {
 
-    // making it a coroutine so it can handle its own behaviour over time
-    public virtual IEnumerator ActivateRoutine() {
+        public Sprite icon;
 
-        yield break;
+        // making it an ienumerator so it can handle its own behaviour over time
+        public virtual IEnumerator ActivateRoutine(ShieldPaddle paddle) {
+
+
+
+            yield break;
+        }
     }
 }
