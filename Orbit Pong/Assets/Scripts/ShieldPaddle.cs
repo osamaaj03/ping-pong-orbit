@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pong.Runes;
 
 public class ShieldPaddle : MonoBehaviour
 {
+    public Rune rune;
+    Coroutine runeRoutine;
+
     int hitCount = 0;
 
     //Provide the list of sprites for the state of the shield (For example: empty, half, full power)
@@ -34,12 +38,21 @@ public class ShieldPaddle : MonoBehaviour
         // if the shield has been hit enough times by the ball, activate its power.
         if (hitCount >= activatorSprites.Count)
         {
-            // Placeholder for the shield being powered up / activated
-            shieldSprite.color = Color.green;
+            ActivateRune();
         }
         else
         {
             shieldSprite.sprite = activatorSprites[hitCount - 1];
+        }
+    }
+
+    void ActivateRune() {
+        // Placeholder for the shield being powered up / activated
+        shieldSprite.color = Color.green;
+
+        if (rune != null) {
+            // get the coroutine so we can stop/cancel the rune ability for any reason
+            runeRoutine = StartCoroutine(rune.ActivateRoutine(this));
         }
     }
 }
