@@ -5,6 +5,11 @@ using UnityEngine;
 public abstract class ProjectileHandler : MonoBehaviour
 {
     public float maxSpeed = 1;
-    public float damage;
+    [SerializeField] float damage;
     public Transform target;
+
+    public float Damage
+    {
+        get => damage; set => damage = value;
+    }
 }

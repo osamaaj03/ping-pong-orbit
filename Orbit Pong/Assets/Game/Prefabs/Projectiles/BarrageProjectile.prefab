@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2540438606841102661}
   m_Layer: 0
   m_Name: BarrageProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,5 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 30
-  damage: 0
+  damage: 1
   target: {fileID: 0}
+  destroyAfterTime: 1.5

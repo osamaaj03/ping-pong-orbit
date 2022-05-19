@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HomingBarrageTest
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  damage: 5
-  projectileAmount: 5
+  damage: 1
+  projectileAmount: 2
   spawnSpeed: 10
   projectilePrefab: {fileID: 1683839553016201806, guid: 38e8f04bef7b248439bde2bafb39930e, type: 3}
